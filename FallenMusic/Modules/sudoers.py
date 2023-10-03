@@ -107,7 +107,7 @@ async def sudodel(_, message: Message):
 @app.on_message(filters.command(["sudolist", "sudoers", "sudo"]))
 async def sudoers_list(_, message: Message):
     hehe = await message.reply_text("» ɢᴇᴛᴛɪɴɢ sᴜᴅᴏ ᴜsᴇʀs ʟɪsᴛ...")
-    text = "<u>🥀 **ᴏᴡɴᴇʀ :**</u>\n"
+    text = "<u>🔮 **ᴏᴡɴᴇʀ :**</u>\n"
     count = 0
     user = await app.get_users(OWNER_ID)
     user = user.first_name if not user.mention else user.mention
